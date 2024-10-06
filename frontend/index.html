@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Welcome to the Messaging App</h1>
+
+    <!-- Signup Form -->
+    <div id="signup-form">
+        <h2>Sign Up</h2>
+        <input type="text" id="signup-username" placeholder="Username" required>
+        <input type="email" id="signup-email" placeholder="Email" required>
+        <input type="password" id="signup-password" placeholder="Password" required>
+        <input type="text" id="signup-bio" placeholder="Bio">
+        <button onclick="signup()">Sign Up</button>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-form">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Message Sending Form -->
+    <div id="message-form">
+        <h2>Send a Message</h2>
+        <input type="text" id="receiver-id" placeholder="Receiver ID (User ID)" required>
+        <input type="text" id="message-content" placeholder="Message" required>
+        <button onclick="sendMessage()">Send Message</button>
+    </div>
+
+    <!-- Messages Section -->
+    <div id="messages">
+        <h2>Messages</h2>
+        <ul id="messages-list"></ul>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
